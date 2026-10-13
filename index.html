@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio profesional de Project Management, gestión de proyectos tecnológicos y delivery de software.">
+  <title>Portafolio | Project Manager</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #252525;
+      background: #ffffff;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1050px, 88%);
+      margin: auto;
+    }
+
+    header {
+      border-bottom: 1px solid #eeeeee;
+      padding: 22px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+      font-size: 13px;
+      color: #555555;
+    }
+
+    .nav-links a:hover,
+    .text-link:hover {
+      color: #777777;
+    }
+
+    .hero {
+      padding: 110px 0 95px;
+      max-width: 790px;
+    }
+
+    .eyebrow {
+      color: #777777;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 6vw, 66px);
+      line-height: 1.12;
+      letter-spacing: -2.5px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      max-width: 680px;
+      font-size: 17px;
+      color: #666666;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #252525;
+      color: #ffffff;
+      padding: 12px 20px;
+      border: 1px solid #252525;
+      font-size: 13px;
+    }
+
+    .text-link {
+      font-size: 13px;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    section {
+      padding: 65px 0;
+      border-top: 1px solid #eeeeee;
+    }
+
+    .section-label {
+      color: #777777;
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
+      font-size: 11px;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 30px;
+      font-weight: 500;
+      letter-spacing: -0.8px;
+      margin-bottom: 25px;
+    }
+
+    .section-intro {
+      max-width: 720px;
+      color: #666666;
+      margin-bottom: 30px;
+    }
+
+    .project {
+      padding: 26px 0;
+      border-top: 1px solid #eeeeee;
+    }
+
+    .project h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .project p,
+    .about-text {
+      color: #666666;
+      max-width: 760px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .tag {
+      border: 1px solid #e5e5e5;
+      padding: 7px 12px;
+      font-size: 12px;
+      color: #555555;
+    }
+
+    .contact-box {
+      background: #f8f8f8;
+      padding: 35px;
+    }
+
+    .contact-box p {
+      color: #666666;
+      margin-bottom: 22px;
+    }
+
+    footer {
+      border-top: 1px solid #eeeeee;
+      padding: 25px 0;
+      color: #777777;
+      font-size: 12px;
+    }
+
+    @media (max-width: 600px) {
+      .nav-links {
+        gap: 12px;
+      }
+
+      .hero {
+        padding: 75px 0 65px;
+      }
+
+      h1 {
+        letter-spacing: -1.5px;
+      }
+
+      section {
+        padding: 48px 0;
+      }
+
+      .contact-box {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="#">PORTAFOLIO.</a>
+        <div class="nav-links">
+          <a href="#sobre-mi">Perfil</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#habilidades">Competencias</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero" style="border-top: none;">
+        <p class="eyebrow">Project Management · Digital Products</p>
+
+        <h1>Transformando objetivos en proyectos bien ejecutados.</h1>
+
+        <p>
+          Project Manager especializada en la coordinación de equipos
+          multidisciplinarios, planificación, gestión de riesgos y
+          seguimiento de proyectos de desarrollo de software.
+        </p>
+
+        <div class="actions">
+          <a class="button" href="#proyectos">Conoce mi experiencia</a>
+          <a class="text-link" href="#contacto">Contactar →</a>
+        </div>
+      </section>
+
+      <section id="sobre-mi">
+        <p class="section-label">01 / Perfil profesional</p>
+        <h2>Sobre mí</h2>
+
+        <p class="about-text">
+          Me enfoco en conectar las necesidades del negocio con la
+          ejecución tecnológica, facilitando la colaboración entre
+          Product Owners, equipos de desarrollo, QA y stakeholders.
+          Trabajo en la planificación de entregas, seguimiento de
+          compromisos, gestión de dependencias y mitigación de riesgos
+          para mantener los proyectos alineados con sus objetivos.
+        </p>
+      </section>
+
+      <section id="proyectos">
+        <p class="section-label">02 / Experiencia aplicada</p>
+        <h2>Proyectos destacados</h2>
+
+        <p class="section-intro">
+          Una selección de áreas de trabajo que reflejan mi experiencia
+          en la gestión de productos digitales y entregas tecnológicas.
+        </p>
+
+        <article class="project">
+          <h3>Gestión de releases de software</h3>
+          <p>
+            Planificación de entregas, coordinación de dependencias,
+            seguimiento de ambientes, preparación de pruebas y
+            comunicación de riesgos para facilitar liberaciones controladas.
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>Integraciones y pagos digitales</h3>
+          <p>
+            Coordinación de actividades relacionadas con funcionalidades
+            de pago, integraciones de servicios y colaboración entre
+            equipos de desarrollo y pruebas.
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>Productos digitales internacionales</h3>
+          <p>
+            Seguimiento de iniciativas para diferentes mercados,
+            coordinación de equipos multidisciplinarios y alineación
+            de entregables con los requerimientos del negocio.
+          </p>
+        </article>
+
+        <p class="section-intro">
+          Los casos se describirán con mayor detalle conforme se incorporen
+          resultados verificables y se valide qué información puede hacerse pública.
+        </p>
+      </section>
+
+      <section id="habilidades">
+        <p class="section-label">03 / Competencias</p>
+        <h2>Herramientas y conocimientos</h2>
+
+        <p class="section-intro">
+          Gestión de proyectos, organización del trabajo y coordinación
+          de entregas en entornos de desarrollo de software.
+        </p>
+
+        <div class="tag-list">
+          <span class="tag">Project Management</span>
+          <span class="tag">Agile / Scrum</span>
+          <span class="tag">Planificación de releases</span>
+          <span class="tag">Gestión de riesgos</span>
+          <span class="tag">Gestión de alcance</span>
+          <span class="tag">Jira</span>
+          <span class="tag">QA / UAT</span>
+          <span class="tag">Stakeholder Management</span>
+          <span class="tag">Software Delivery</span>
+          <span class="tag">Coordinación de equipos</span>
+        </div>
+      </section>
+
+      <section id="contacto">
+        <p class="section-label">04 / Contacto</p>
+
+        <div class="contact-box">
+          <h2>¿Hablamos?</h2>
+          <p>
+            Estoy abierta a conectar con equipos y organizaciones
+            interesados en la gestión de proyectos tecnológicos,
+            productos digitales y delivery de software.
+          </p>
+
+          <!-- Agrega aquí tu correo profesional y LinkedIn -->
+          <a class="text-link" href="mailto:TU_CORREO@ejemplo.com">
+            Enviar correo →
+          </a>
+          <br><br>
+          <a class="text-link"
+             href="https://www.linkedin.com/"
+             target="_blank"
+             rel="noopener noreferrer">
+            Visitar LinkedIn →
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> · Portafolio profesional
+      de Project Management.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
