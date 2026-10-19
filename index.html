@@ -211,6 +211,99 @@
         padding: 24px;
       }
     }
+
+    
+/* Nueva identidad visual: turquesa y blanco */
+:root {
+  --accent: #14B8A6;
+  --accent-dark: #0F766E;
+  --text-main: #111827;
+  --text-muted: #64748B;
+  --page-bg: #F9FAFF;
+}
+
+body {
+  color: var(--text-main);
+  background:
+    radial-gradient(ellipse at 75% 5%, rgba(20, 184, 166, 0.10), transparent 35%),
+    radial-gradient(ellipse at 95% 15%, rgba(99, 102, 241, 0.08), transparent 30%),
+    #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.88);
+  border-bottom: 1px solid #E5E7EB;
+}
+
+nav a {
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--accent-dark);
+}
+
+.eyebrow {
+  color: var(--accent-dark);
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+h1, h2, h3 {
+  color: var(--text-main);
+  letter-spacing: -0.7px;
+}
+
+.hero {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.actions a {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 28px;
+  transition: all 0.2s ease;
+}
+
+.actions a:first-child {
+  background: linear-gradient(135deg, #14B8A6, #2DD4BF);
+  color: #FFFFFF;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(20, 184, 166, 0.20);
+}
+
+.actions a:first-child:hover {
+  transform: translateY(-2px);
+}
+
+section {
+  scroll-margin-top: 24px;
+}
+
+.contact-box {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 18px;
+}
+
+footer {
+  color: var(--text-muted);
+  border-top-color: #E5E7EB;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 55px 0;
+  }
+
+  .actions a {
+    margin-bottom: 8px;
+  }
+}
+
   </style>
 </head>
 
