@@ -3,9 +3,9 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f8fafc">
-  <meta name="description" content="Portafolio profesional de Erika Hernández Castillo. Project Manager especializada en proyectos tecnológicos, canales digitales y transformación TI.">
+  <meta name="description" content="Portafolio de Erika Hernández Castillo, Project Manager especializada en proyectos tecnológicos, productos digitales y transformación TI.">
   <title>Erika Hernández Castillo | Project Manager</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,12 +19,12 @@
       --ink: #172033;
       --text: #536174;
       --muted: #7b8798;
-      --white: #ffffff;
+      --white: #fff;
       --surface: #f8fafc;
       --mint: #ddf7f2;
       --lavender: #e8e4ff;
       --border: #e7eaf0;
-      --shadow: 0 12px 35px rgba(30, 64, 85, 0.09);
+      --shadow: 0 12px 35px rgba(30,64,85,.09);
       --radius: 24px;
     }
 
@@ -42,8 +42,8 @@
     body {
       font-family: "Inter", Arial, sans-serif;
       color: var(--ink);
-      background: var(--white);
-      line-height: 1.7;
+      background: #fff;
+      line-height: 1.75;
       overflow-x: hidden;
     }
 
@@ -54,9 +54,9 @@
       z-index: -1;
       pointer-events: none;
       background:
-        radial-gradient(ellipse at 78% 9%, rgba(199, 210, 254, .36), transparent 34%),
-        radial-gradient(ellipse at 55% 28%, rgba(45, 212, 191, .10), transparent 33%),
-        radial-gradient(ellipse at 10% 65%, rgba(221, 247, 242, .30), transparent 35%);
+        radial-gradient(ellipse at 80% 8%, rgba(199,210,254,.30), transparent 34%),
+        radial-gradient(ellipse at 55% 30%, rgba(45,212,191,.09), transparent 34%),
+        radial-gradient(ellipse at 5% 75%, rgba(221,247,242,.28), transparent 35%);
     }
 
     a {
@@ -64,55 +64,52 @@
       text-decoration: none;
     }
 
-    button, a {
-      -webkit-tap-highlight-color: transparent;
+    img {
+      display: block;
+      max-width: 100%;
     }
 
     button {
       font: inherit;
     }
 
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
     .container {
       width: min(1120px, calc(100% - 48px));
-      margin-inline: auto;
+      margin: 0 auto;
     }
 
     .section {
-      padding: 100px 0;
+      padding: 95px 0;
     }
 
     .section-label {
+      margin-bottom: 12px;
       color: var(--teal-dark);
       text-transform: uppercase;
       letter-spacing: 2px;
       font-size: .78rem;
       font-weight: 700;
-      margin-bottom: 12px;
     }
 
     .section-title {
-      font-size: clamp(2rem, 4vw, 3rem);
-      letter-spacing: -1.5px;
-      line-height: 1.2;
       margin-bottom: 20px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.2;
+      letter-spacing: -1.5px;
     }
 
     .section-description {
-      color: var(--text);
       max-width: 760px;
-      font-size: 1.04rem;
+      color: var(--text);
+      font-size: 1.02rem;
     }
 
     .gradient-text {
+      color: var(--teal);
       background: linear-gradient(100deg, #14b8a6, #54dfca);
       -webkit-background-clip: text;
       background-clip: text;
-      color: transparent;
+      -webkit-text-fill-color: transparent;
     }
 
     .button {
@@ -120,13 +117,13 @@
       justify-content: center;
       align-items: center;
       gap: 9px;
-      padding: 13px 23px;
+      padding: 12px 22px;
       border: 1px solid transparent;
       border-radius: 999px;
-      font-size: .93rem;
+      font-size: .92rem;
       font-weight: 700;
-      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
       cursor: pointer;
+      transition: transform .2s, box-shadow .2s;
     }
 
     .button:hover {
@@ -135,27 +132,23 @@
 
     .button-primary {
       color: white;
-      background: linear-gradient(110deg, #14b8a6, #24cdb8);
-      box-shadow: 0 8px 22px rgba(20, 184, 166, .22);
-    }
-
-    .button-primary:hover {
-      box-shadow: 0 12px 26px rgba(20, 184, 166, .32);
+      background: linear-gradient(110deg, #14b8a6, #2bd4bd);
+      box-shadow: 0 8px 22px rgba(20,184,166,.22);
     }
 
     .button-secondary {
       color: var(--ink);
+      background: white;
       border-color: var(--border);
-      background: rgba(255,255,255,.8);
     }
 
-    /* Navegación */
+    /* MENÚ */
 
     .navbar {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(255,255,255,.88);
+      background: rgba(255,255,255,.90);
       backdrop-filter: blur(18px);
       border-bottom: 1px solid rgba(226,232,240,.8);
     }
@@ -172,35 +165,34 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      font-size: .98rem;
+      font-size: .95rem;
       font-weight: 800;
-      letter-spacing: -.5px;
       white-space: nowrap;
     }
 
     .brand-mark {
       display: grid;
       place-items: center;
-      width: 38px;
-      height: 38px;
-      border-radius: 13px;
-      background: var(--mint);
+      width: 40px;
+      height: 40px;
+      border-radius: 14px;
       color: var(--teal-dark);
+      background: var(--mint);
       font-size: .85rem;
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
     }
 
     .nav-links a {
-      padding: 8px 16px;
+      padding: 9px 16px;
       border-radius: 999px;
       color: #687386;
-      font-size: .98rem;
-      transition: all .2s ease;
+      font-size: .97rem;
+      transition: all .2s;
     }
 
     .nav-links a:hover,
@@ -212,41 +204,39 @@
 
     .menu-toggle {
       display: none;
-      border: 0;
-      background: var(--mint);
-      color: var(--teal-dark);
-      border-radius: 12px;
       width: 44px;
       height: 44px;
+      border: 0;
+      border-radius: 12px;
+      color: var(--teal-dark);
+      background: var(--mint);
       font-size: 1.4rem;
       cursor: pointer;
     }
 
-    /* Portada */
+    /* PORTADA */
 
     .hero {
-      min-height: 650px;
-      display: flex;
-      align-items: center;
-      padding: 75px 0 90px;
+      padding: 75px 0 95px;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.25fr .75fr;
+      grid-template-columns: 1.2fr .8fr;
       align-items: center;
       gap: 65px;
+      min-height: 490px;
     }
 
     .eyebrow {
-      display: inline-flex;
+      display: flex;
       align-items: center;
-      gap: 10px;
-      margin-bottom: 23px;
+      gap: 11px;
+      margin-bottom: 24px;
       color: var(--muted);
-      font-size: .85rem;
+      font-size: .82rem;
       font-weight: 700;
-      letter-spacing: 1.7px;
+      letter-spacing: 1.5px;
       text-transform: uppercase;
     }
 
@@ -259,18 +249,18 @@
     }
 
     .hero h1 {
-      font-size: clamp(2.8rem, 5.4vw, 4.5rem);
+      margin-bottom: 23px;
+      font-size: clamp(2.7rem, 5.2vw, 4.3rem);
       line-height: 1.12;
-      letter-spacing: -3px;
+      letter-spacing: -2.8px;
       font-weight: 800;
-      margin-bottom: 24px;
     }
 
     .hero-description {
-      max-width: 600px;
-      color: var(--text);
-      font-size: 1.08rem;
+      max-width: 590px;
       margin-bottom: 30px;
+      color: var(--text);
+      font-size: 1.06rem;
     }
 
     .hero-buttons {
@@ -281,56 +271,42 @@
 
     .hero-photo-wrap {
       position: relative;
-      width: min(100%, 355px);
-      margin-inline: auto;
+      width: min(100%, 345px);
+      margin: 0 auto;
     }
 
     .hero-photo-wrap::before {
       content: "";
       position: absolute;
-      inset: -23px;
+      inset: -22px;
+      z-index: -1;
       border-radius: 48% 52% 45% 55%;
       background: linear-gradient(140deg, rgba(20,184,166,.20), rgba(199,210,254,.5));
       transform: rotate(-8deg);
     }
 
-    .hero-photo-wrap::after {
-      content: "";
-      position: absolute;
-      width: 90px;
-      height: 90px;
-      right: -25px;
-      bottom: 24px;
-      z-index: -1;
-      border-radius: 28px;
-      background: var(--mint);
-      transform: rotate(15deg);
-    }
-
     .hero-photo {
-      position: relative;
       width: 100%;
       aspect-ratio: 1;
       object-fit: cover;
       object-position: center 42%;
+      border: 8px solid white;
       border-radius: 48% 48% 38% 38%;
-      border: 8px solid rgba(255,255,255,.95);
       box-shadow: var(--shadow);
       background: var(--surface);
     }
 
     .photo-caption {
-      position: relative;
       width: fit-content;
       margin: 25px auto 0;
-      padding: 12px 19px;
-      border: 1px solid rgba(231,234,240,.9);
+      padding: 12px 20px;
+      border: 1px solid var(--border);
       border-radius: 16px;
-      background: rgba(255,255,255,.9);
+      background: white;
       box-shadow: var(--shadow);
+      text-align: center;
       color: var(--text);
       font-size: .85rem;
-      text-align: center;
     }
 
     .photo-caption strong {
@@ -339,7 +315,7 @@
       font-size: .95rem;
     }
 
-    /* Perfil */
+    /* SOBRE MÍ: FOTO IZQUIERDA, TEXTO DERECHA */
 
     .profile-section {
       border-top: 1px solid var(--border);
@@ -347,24 +323,48 @@
 
     .profile-grid {
       display: grid;
-      grid-template-columns: .8fr 1.2fr;
-      gap: 65px;
+      grid-template-columns: 300px minmax(0, 1fr);
       align-items: start;
+      gap: 55px;
     }
 
-    .profile-aside {
+    .profile-photo-column {
       position: sticky;
       top: 110px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 12px;
     }
 
-    .profile-aside p {
-      color: var(--text);
-      margin-top: 15px;
+    .profile-photo {
+      width: 250px;
+      height: 290px;
+      object-fit: cover;
+      object-position: center 40%;
+      border: 7px solid white;
+      border-radius: 28px;
+      box-shadow: 0 15px 40px rgba(30,64,85,.14);
+      background: var(--surface);
+    }
+
+    .profile-photo-caption {
+      margin-top: 8px;
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .profile-photo-role {
+      margin-bottom: 12px;
+      color: var(--muted);
+      font-size: .85rem;
+      line-height: 1.5;
     }
 
     .profile-copy p {
-      color: var(--text);
       margin-bottom: 20px;
+      color: var(--text);
     }
 
     .profile-copy strong {
@@ -380,26 +380,27 @@
 
     .tag {
       display: inline-flex;
-      padding: 8px 13px;
+      padding: 7px 12px;
       border: 1px solid #d8f1eb;
       border-radius: 999px;
-      background: rgba(221,247,242,.55);
       color: #247d74;
-      font-size: .82rem;
+      background: rgba(221,247,242,.6);
+      font-size: .81rem;
       font-weight: 600;
     }
 
-    /* Experiencia */
+    /* EXPERIENCIA */
 
-    .experience-section {
-      background: rgba(248,250,252,.76);
+    .experience-section,
+    .skills-section {
+      background: rgba(248,250,252,.78);
     }
 
     .experience-list {
       position: relative;
-      margin-top: 45px;
       display: grid;
-      gap: 24px;
+      gap: 23px;
+      margin-top: 42px;
     }
 
     .experience-list::before {
@@ -415,14 +416,13 @@
     .experience-card {
       position: relative;
       display: grid;
-      grid-template-columns: 44px 1fr;
+      grid-template-columns: 44px minmax(0, 1fr);
       gap: 22px;
       padding: 25px;
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      background: rgba(255,255,255,.93);
-      box-shadow: 0 5px 20px rgba(30,64,85,.035);
-      transition: transform .2s ease, box-shadow .2s ease;
+      background: rgba(255,255,255,.96);
+      transition: transform .2s, box-shadow .2s;
     }
 
     .experience-card:hover {
@@ -439,9 +439,9 @@
       height: 44px;
       border: 5px solid white;
       border-radius: 15px;
-      background: var(--mint);
       color: var(--teal-dark);
-      font-size: .78rem;
+      background: var(--mint);
+      font-size: .75rem;
       font-weight: 800;
       box-shadow: 0 0 0 1px #c9eee6;
     }
@@ -450,43 +450,43 @@
       display: flex;
       justify-content: space-between;
       align-items: start;
-      gap: 18px;
+      gap: 16px;
       margin-bottom: 12px;
     }
 
     .experience-heading h3 {
-      font-size: 1.13rem;
-      line-height: 1.45;
+      font-size: 1.1rem;
+      line-height: 1.5;
     }
 
     .company {
       color: var(--teal-dark);
+      font-size: .92rem;
       font-weight: 600;
-      font-size: .94rem;
     }
 
     .date {
       flex-shrink: 0;
-      color: var(--muted);
-      font-size: .82rem;
       padding: 5px 10px;
       border-radius: 999px;
+      color: var(--muted);
       background: var(--surface);
+      font-size: .8rem;
     }
 
     .experience-card ul {
       padding-left: 19px;
       color: var(--text);
-      font-size: .94rem;
+      font-size: .92rem;
     }
 
     .experience-card li {
-      padding-left: 4px;
-      margin-bottom: 6px;
+      margin-bottom: 7px;
+      padding-left: 3px;
     }
 
     .previous-experience {
-      margin-top: 35px;
+      margin-top: 32px;
       padding: 25px;
       border: 1px solid var(--border);
       border-radius: var(--radius);
@@ -499,18 +499,22 @@
 
     .previous-list {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 15px;
     }
 
     .previous-item {
-      padding: 16px;
+      padding: 15px;
       border-radius: 15px;
       background: var(--surface);
     }
 
-    .previous-item strong {
+    .previous-item strong,
+    .previous-item span {
       display: block;
+    }
+
+    .previous-item strong {
       font-size: .9rem;
     }
 
@@ -520,26 +524,27 @@
     }
 
     .cv-action {
-      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
     }
 
-    /* Proyectos */
+    /* PROYECTOS */
 
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 22px;
-      margin-top: 40px;
+      margin-top: 38px;
     }
 
     .project-card {
-      position: relative;
-      overflow: hidden;
-      padding: 30px;
+      padding: 28px;
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      background: rgba(255,255,255,.92);
-      transition: transform .25s ease, box-shadow .25s ease;
+      background: rgba(255,255,255,.95);
+      transition: transform .2s, box-shadow .2s;
     }
 
     .project-card:hover {
@@ -550,25 +555,26 @@
     .project-icon {
       display: grid;
       place-items: center;
-      width: 52px;
-      height: 52px;
-      margin-bottom: 23px;
-      border-radius: 17px;
-      background: linear-gradient(140deg, var(--mint), #e5e9ff);
+      width: 50px;
+      height: 50px;
+      margin-bottom: 20px;
+      border-radius: 16px;
       color: var(--teal-dark);
-      font-size: 1.4rem;
+      background: linear-gradient(140deg, var(--mint), #e5e9ff);
+      font-size: 1.35rem;
       font-weight: 800;
     }
 
     .project-card h3 {
-      font-size: 1.2rem;
-      margin-bottom: 12px;
+      margin-bottom: 11px;
+      font-size: 1.15rem;
+      line-height: 1.5;
     }
 
     .project-card p {
+      margin-bottom: 18px;
       color: var(--text);
-      font-size: .95rem;
-      margin-bottom: 20px;
+      font-size: .93rem;
     }
 
     .project-tags {
@@ -580,62 +586,59 @@
     .project-tags span {
       padding: 5px 10px;
       border-radius: 8px;
-      background: var(--surface);
       color: #687386;
-      font-size: .78rem;
+      background: var(--surface);
+      font-size: .77rem;
     }
 
     .projects-note {
-      margin-top: 22px;
+      margin-top: 20px;
       color: var(--muted);
-      font-size: .86rem;
+      font-size: .85rem;
     }
 
-    /* Competencias */
-
-    .skills-section {
-      background: rgba(248,250,252,.72);
-    }
+    /* COMPETENCIAS */
 
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 20px;
-      margin-top: 40px;
+      margin-top: 38px;
     }
 
     .skill-card {
-      padding: 25px;
+      padding: 24px;
       border: 1px solid var(--border);
       border-radius: 20px;
-      background: rgba(255,255,255,.94);
+      background: white;
     }
 
-    .skill-card .skill-symbol {
+    .skill-symbol {
       display: grid;
       place-items: center;
       width: 43px;
       height: 43px;
-      margin-bottom: 18px;
+      margin-bottom: 17px;
       border-radius: 14px;
-      background: var(--mint);
       color: var(--teal-dark);
+      background: var(--mint);
+      font-size: .8rem;
       font-weight: 800;
     }
 
     .skill-card h3 {
-      font-size: 1.03rem;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
+      font-size: 1rem;
     }
 
     .skill-card p {
       color: var(--text);
-      font-size: .9rem;
+      font-size: .89rem;
     }
 
     .certifications {
-      margin-top: 38px;
-      padding: 27px;
+      margin-top: 35px;
+      padding: 26px;
       border: 1px solid var(--border);
       border-radius: 22px;
       background: white;
@@ -655,11 +658,11 @@
       display: flex;
       align-items: center;
       gap: 9px;
-      padding: 11px 15px;
+      padding: 10px 14px;
       border-radius: 12px;
-      background: var(--surface);
       color: var(--text);
-      font-size: .9rem;
+      background: var(--surface);
+      font-size: .88rem;
     }
 
     .cert-check {
@@ -667,45 +670,48 @@
       font-weight: 800;
     }
 
-    /* Contacto */
+    .education-text {
+      margin-top: 20px;
+      color: var(--text);
+      font-size: .91rem;
+    }
+
+    /* CONTACTO */
 
     .contact-section {
-      padding: 100px 0 110px;
+      padding: 95px 0 105px;
     }
 
     .contact-panel {
-      position: relative;
-      overflow: hidden;
-      padding: 65px 45px;
+      padding: 60px 35px;
       border: 1px solid rgba(220,231,242,.9);
       border-radius: 32px;
       background:
-        radial-gradient(ellipse at 90% 10%, rgba(199,210,254,.45), transparent 35%),
-        radial-gradient(ellipse at 5% 90%, rgba(45,212,191,.20), transparent 35%),
-        #fff;
+        radial-gradient(ellipse at 90% 10%, rgba(199,210,254,.40), transparent 35%),
+        radial-gradient(ellipse at 5% 90%, rgba(45,212,191,.17), transparent 35%),
+        white;
       text-align: center;
     }
 
     .contact-panel h2 {
       max-width: 760px;
       margin: 0 auto 18px;
-      font-size: clamp(2.2rem, 5vw, 3.5rem);
-      line-height: 1.15;
-      letter-spacing: -1.8px;
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      line-height: 1.18;
+      letter-spacing: -1.6px;
     }
 
     .contact-panel > p {
       max-width: 650px;
-      margin: 0 auto 28px;
+      margin: 0 auto 25px;
       color: var(--text);
-      font-size: 1.02rem;
     }
 
     .social-links {
       display: flex;
       justify-content: center;
       gap: 15px;
-      margin: 28px 0 22px;
+      margin: 28px 0 20px;
     }
 
     .social-link {
@@ -717,11 +723,11 @@
       color: white;
       background: linear-gradient(135deg, #14b8a6, #2bd4bd);
       box-shadow: 0 8px 18px rgba(20,184,166,.2);
-      transition: transform .2s ease;
+      transition: transform .2s;
     }
 
     .social-link:hover {
-      transform: translateY(-4px) scale(1.04);
+      transform: translateY(-4px);
     }
 
     .social-link svg {
@@ -753,11 +759,11 @@
       gap: 12px;
     }
 
-    /* Pie */
+    /* PIE */
 
     .footer {
-      border-top: 1px solid var(--border);
       padding: 28px 0;
+      border-top: 1px solid var(--border);
     }
 
     .footer-inner {
@@ -766,13 +772,14 @@
       justify-content: space-between;
       gap: 18px;
       color: var(--muted);
-      font-size: .84rem;
+      font-size: .83rem;
     }
 
     .footer-links {
       display: flex;
+      align-items: center;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 18px;
     }
 
     .footer-links a:hover {
@@ -782,8 +789,8 @@
     .back-to-top {
       display: grid;
       place-items: center;
-      width: 40px;
-      height: 40px;
+      width: 38px;
+      height: 38px;
       border: 1px solid var(--border);
       border-radius: 50%;
       background: white;
@@ -791,63 +798,47 @@
       font-size: 1.2rem;
     }
 
-    /* Aparición suave */
-
-    @media (prefers-reduced-motion: no-preference) {
-      .reveal {
-        animation: fade-up .65s ease both;
-      }
-
-      @keyframes fade-up {
-        from {
-          opacity: 0;
-          transform: translateY(14px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    }
-
-    /* Adaptación móvil */
+    /* TABLET */
 
     @media (max-width: 900px) {
       .hero-grid {
-        grid-template-columns: 1fr .7fr;
+        grid-template-columns: 1fr .75fr;
         gap: 35px;
       }
 
       .hero h1 {
-        font-size: clamp(2.5rem, 6vw, 3.5rem);
+        font-size: clamp(2.4rem, 5.8vw, 3.5rem);
       }
 
       .profile-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
+        grid-template-columns: 250px minmax(0, 1fr);
+        gap: 32px;
       }
 
-      .profile-aside {
-        position: static;
+      .profile-photo {
+        width: 220px;
+        height: 260px;
+      }
+
+      .experience-heading {
+        flex-direction: column;
+        gap: 6px;
       }
 
       .skills-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
-
-      .experience-heading {
-        flex-direction: column;
-        gap: 7px;
-      }
     }
 
-    @media (max-width: 650px) {
+    /* CELULAR */
+
+    @media (max-width: 700px) {
       .container {
-        width: min(100% - 34px, 540px);
+        width: calc(100% - 34px);
       }
 
       .section {
-        padding: 70px 0;
+        padding: 68px 0;
       }
 
       .nav-inner {
@@ -855,7 +846,7 @@
       }
 
       .brand {
-        font-size: .9rem;
+        font-size: .84rem;
       }
 
       .menu-toggle {
@@ -886,8 +877,7 @@
       }
 
       .hero {
-        min-height: auto;
-        padding: 60px 0 70px;
+        padding: 55px 0 70px;
       }
 
       .hero-grid {
@@ -896,7 +886,7 @@
       }
 
       .hero h1 {
-        font-size: clamp(2.6rem, 12vw, 3.6rem);
+        font-size: clamp(2.5rem, 11vw, 3.5rem);
         letter-spacing: -2px;
       }
 
@@ -908,16 +898,28 @@
         width: min(74%, 290px);
       }
 
-      .hero-buttons {
-        align-items: stretch;
-      }
-
       .hero-buttons .button {
         flex: 1;
       }
 
+      /* La foto queda encima del texto en pantallas pequeñas */
+      .profile-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .profile-photo-column {
+        position: static;
+      }
+
+      .profile-photo {
+        width: min(250px, 75%);
+        height: auto;
+        aspect-ratio: 4 / 5;
+      }
+
       .experience-card {
-        grid-template-columns: 35px 1fr;
+        grid-template-columns: 35px minmax(0, 1fr);
         gap: 13px;
         padding: 18px 14px;
       }
@@ -930,32 +932,24 @@
         width: 35px;
         height: 35px;
         border-radius: 12px;
-        font-size: .7rem;
-      }
-
-      .experience-heading h3 {
-        font-size: 1rem;
       }
 
       .experience-card ul {
-        font-size: .88rem;
+        font-size: .87rem;
       }
 
-      .previous-list {
-        grid-template-columns: 1fr;
-      }
-
+      .previous-list,
       .projects-grid,
       .skills-grid {
         grid-template-columns: 1fr;
       }
 
       .project-card {
-        padding: 24px;
+        padding: 23px;
       }
 
       .contact-panel {
-        padding: 48px 20px;
+        padding: 45px 20px;
         border-radius: 24px;
       }
 
@@ -972,13 +966,25 @@
         justify-content: center;
       }
     }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: .01ms !important;
+      }
+    }
   </style>
 </head>
 
 <body>
   <header class="navbar">
     <div class="container nav-inner">
-      <a class="brand" href="#inicio" aria-label="Erika Hernández, inicio">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
         <span class="brand-mark">EH</span>
         <span>ERIKA HERNÁNDEZ</span>
       </a>
@@ -987,7 +993,7 @@
         aria-label="Abrir menú" aria-expanded="false"
         aria-controls="navLinks">☰</button>
 
-      <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+      <nav class="nav-links" id="navLinks" aria-label="Menú principal">
         <a href="#inicio" class="active">Inicio</a>
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#experiencia">Experiencia</a>
@@ -999,10 +1005,10 @@
   </header>
 
   <main>
-    <!-- PORTADA -->
+    <!-- INICIO -->
     <section class="hero" id="inicio">
       <div class="container hero-grid">
-        <div class="reveal">
+        <div>
           <div class="eyebrow">
             <span class="eyebrow-dot"></span>
             Project Management · Digital Products
@@ -1023,7 +1029,7 @@
 
           <div class="hero-buttons">
             <a class="button button-primary" href="#experiencia">
-              Conoce mi experiencia <span aria-hidden="true">→</span>
+              Conoce mi experiencia →
             </a>
             <a class="button button-secondary"
               href="CV_Erika_Hernandez_Castillo.pdf"
@@ -1033,15 +1039,13 @@
           </div>
         </div>
 
-        <div class="reveal">
+        <div>
           <div class="hero-photo-wrap">
-            <img
-              class="hero-photo"
+            <img class="hero-photo"
               src="foto-erika.png"
-              alt="Fotografía de Erika Hernández Castillo"
-              onerror="this.style.display='none'; this.parentElement.classList.add('photo-missing');"
-            >
+              alt="Fotografía de Erika Hernández Castillo">
           </div>
+
           <div class="photo-caption">
             <strong>Erika Hernández Castillo</strong>
             Project Manager · Proyectos tecnológicos
@@ -1053,57 +1057,60 @@
     <!-- SOBRE MÍ -->
     <section class="section profile-section" id="sobre-mi">
       <div class="container profile-grid">
-        <div class="profile-aside">
-          <p class="section-label">01 / Perfil profesional</p>
-          <h2 class="section-title">Aquí está <span class="gradient-text">mi historia.</span></h2>
-          <p>
-            Negocio, tecnología y colaboración: tres pilares para llevar
-            los proyectos de la planeación a la entrega.
-          </p>
-          <div style="margin-top:25px">
-            <a class="button button-primary"
-              href="CV_Erika_Hernandez_Castillo.pdf"
-              target="_blank" rel="noopener">
-              Ver mi currículum ↗
-            </a>
-          </div>
-        </div>
 
+        <!-- FOTO A LA IZQUIERDA -->
+        <aside class="profile-photo-column">
+          <img class="profile-photo"
+            src="foto-erika.png"
+            alt="Erika Hernández Castillo">
+
+          <p class="profile-photo-caption">Erika Hernández Castillo</p>
+          <p class="profile-photo-role">
+            Project Manager<br>
+            Proyectos tecnológicos
+          </p>
+
+          <a class="button button-primary"
+            href="CV_Erika_Hernandez_Castillo.pdf"
+            target="_blank" rel="noopener">
+            Ver mi currículum ↗
+          </a>
+        </aside>
+
+        <!-- DESCRIPCIÓN A LA DERECHA -->
         <div class="profile-copy">
+          <p class="section-label">01 / Perfil profesional</p>
+          <h2 class="section-title">Sobre mí</h2>
+
           <p>
             Soy <strong>Project Manager</strong> con más de 10 años de
-            experiencia en proyectos de tecnología, canales digitales
-            y transformación TI. Mi trabajo consiste en conectar las
-            necesidades del negocio con la ejecución tecnológica y facilitar
-            la colaboración entre las áreas involucradas.
+            experiencia en proyectos de tecnología, canales digitales y
+            transformación TI. Mi trayectoria conecta las necesidades del
+            negocio con la ejecución tecnológica.
           </p>
 
           <p>
-            He coordinado equipos de <strong>Desarrollo, QA, Backend, UX y
-            Producto</strong>, dando seguimiento a los proyectos desde el
+            He coordinado equipos multidisciplinarios de Desarrollo, QA,
+            Backend, UX y Producto, acompañando los proyectos desde el
             análisis de requerimientos y la planeación hasta las pruebas,
             validaciones y liberaciones a producción.
           </p>
 
           <p>
-            En mi experiencia actual colaboro en proyectos para el canal Web
-            de Cinépolis y coordino la planeación de releases para
-            <strong>México, España, Chile, Argentina e India</strong>,
-            considerando dependencias, ventanas de despliegue y necesidades
-            de los equipos.
+            Actualmente coordino proyectos del canal Web de Cinépolis y la
+            planeación de releases para México, España, Chile, Argentina e
+            India, considerando riesgos, dependencias y ventanas de despliegue.
           </p>
 
           <p>
-            También he participado en proyectos de transformación TI,
-            análisis de requerimientos funcionales, coordinación de
-            liberaciones y seguimiento de iniciativas tecnológicas en
-            organizaciones del sector financiero y de servicios.
+            Mi experiencia también incluye delivery tecnológico,
+            transformación TI, análisis funcional, documentación de
+            requerimientos y coordinación entre negocio y equipos técnicos.
           </p>
 
           <p>
-            Me enfoco en anticipar riesgos, resolver bloqueos, mantener
-            una comunicación clara con los stakeholders y asegurar que
-            los equipos trabajen con prioridades y objetivos compartidos.
+            Me enfoco en facilitar la colaboración, anticipar bloqueos y
+            mantener los proyectos alineados con sus objetivos.
           </p>
 
           <div class="credential-tags">
@@ -1118,14 +1125,16 @@
       </div>
     </section>
 
-    <!-- EXPERIENCIA -->
+    <!-- EXPERIENCIA LABORAL -->
     <section class="section experience-section" id="experiencia">
       <div class="container">
         <p class="section-label">02 / Trayectoria</p>
-        <h2 class="section-title">Experiencia <span class="gradient-text">laboral.</span></h2>
+        <h2 class="section-title">
+          Experiencia <span class="gradient-text">laboral.</span>
+        </h2>
         <p class="section-description">
-          Un recorrido por mi experiencia en gestión de proyectos, delivery
-          tecnológico, transformación TI y análisis de negocio.
+          Mi experiencia en gestión de proyectos, delivery tecnológico,
+          transformación TI y análisis de negocio.
         </p>
 
         <div class="experience-list">
@@ -1145,7 +1154,7 @@
                 <li>Doy seguimiento al ciclo completo de los proyectos: requerimientos, planeación, validaciones y liberaciones a producción.</li>
                 <li>Coordino la planeación de releases para México, España, Chile, Argentina e India, considerando dependencias y ventanas de despliegue.</li>
                 <li>Identifico y doy seguimiento a riesgos, bloqueos e impedimentos para facilitar la continuidad del trabajo.</li>
-                <li>Coordino pruebas funcionales, validaciones en UAT y seguimiento de incidencias con los equipos involucrados.</li>
+                <li>Coordino pruebas funcionales, validaciones en UAT y seguimiento de incidencias.</li>
               </ul>
             </div>
           </article>
@@ -1163,7 +1172,7 @@
               <ul>
                 <li>Planeé y coordiné liberaciones hacia los ambientes de Calidad y Producción.</li>
                 <li>Di seguimiento a ventanas de despliegue, riesgos y dependencias entre equipos.</li>
-                <li>Participé en mejoras al proceso de releases para fortalecer la estabilidad de las liberaciones y reducir incidencias.</li>
+                <li>Participé en mejoras al proceso de releases orientadas a fortalecer la estabilidad de las liberaciones y reducir incidencias.</li>
               </ul>
             </div>
           </article>
@@ -1180,7 +1189,7 @@
               </div>
               <ul>
                 <li>Coordiné proyectos de transformación tecnológica bajo metodología Scrum.</li>
-                <li>Realicé el levantamiento, análisis y documentación de requerimientos funcionales.</li>
+                <li>Realicé levantamiento, análisis y documentación de requerimientos funcionales.</li>
                 <li>Di seguimiento a incidentes, mantenimientos y proyectos de mejora.</li>
                 <li>Participé en la migración del Centro de Datos Alterno.</li>
                 <li>Facilité la coordinación entre áreas de negocio y equipos de desarrollo.</li>
@@ -1201,12 +1210,11 @@
               <ul>
                 <li>Realicé levantamiento y análisis de requerimientos para proyectos regulatorios de Banxico.</li>
                 <li>Elaboré documentación funcional y di seguimiento a iniciativas de tecnología.</li>
-                <li>Coordiné la comunicación entre negocio, desarrollo y QA durante el ciclo de vida de los proyectos.</li>
+                <li>Coordiné la comunicación entre negocio, desarrollo y QA.</li>
                 <li>Participé en pruebas funcionales y pruebas de aceptación con usuarios.</li>
               </ul>
             </div>
           </article>
-
         </div>
 
         <div class="previous-experience">
@@ -1214,17 +1222,17 @@
           <div class="previous-list">
             <div class="previous-item">
               <strong>Líder de Proyecto</strong>
-              <span>Vision Consulting · BBVA</span><br>
+              <span>Vision Consulting · BBVA</span>
               <span>2015 – 2018</span>
             </div>
             <div class="previous-item">
               <strong>Tester</strong>
-              <span>ITW · Citibanamex</span><br>
+              <span>ITW · Citibanamex</span>
               <span>2014 – 2015</span>
             </div>
             <div class="previous-item">
               <strong>QA Tester</strong>
-              <span>Intelexion</span><br>
+              <span>Intelexion</span>
               <span>2013 – 2014</span>
             </div>
           </div>
@@ -1249,7 +1257,9 @@
     <section class="section" id="proyectos">
       <div class="container">
         <p class="section-label">03 / Proyectos y delivery</p>
-        <h2 class="section-title">Convirtiendo planes en <span class="gradient-text">entregas.</span></h2>
+        <h2 class="section-title">
+          Convirtiendo planes en <span class="gradient-text">entregas.</span>
+        </h2>
         <p class="section-description">
           Áreas de trabajo que reflejan mi experiencia coordinando proyectos
           tecnológicos y facilitando la colaboración entre equipos.
@@ -1257,7 +1267,7 @@
 
         <div class="projects-grid">
           <article class="project-card">
-            <div class="project-icon" aria-hidden="true">↗</div>
+            <div class="project-icon">↗</div>
             <h3>Canal Web y productos digitales</h3>
             <p>
               Coordinación de iniciativas para el canal Web, alineando
@@ -1270,7 +1280,7 @@
           </article>
 
           <article class="project-card">
-            <div class="project-icon" aria-hidden="true">◎</div>
+            <div class="project-icon">◎</div>
             <h3>Planeación de releases internacionales</h3>
             <p>
               Coordinación de liberaciones para distintos mercados,
@@ -1283,7 +1293,7 @@
           </article>
 
           <article class="project-card">
-            <div class="project-icon" aria-hidden="true">⌘</div>
+            <div class="project-icon">⌘</div>
             <h3>Transformación tecnológica</h3>
             <p>
               Seguimiento de proyectos de transformación TI, análisis
@@ -1296,7 +1306,7 @@
           </article>
 
           <article class="project-card">
-            <div class="project-icon" aria-hidden="true">✓</div>
+            <div class="project-icon">✓</div>
             <h3>Calidad y liberación a producción</h3>
             <p>
               Coordinación de validaciones funcionales, pruebas UAT,
@@ -1310,8 +1320,8 @@
         </div>
 
         <p class="projects-note">
-          Los proyectos se describen por área de experiencia; no se incluyen
-          métricas de impacto que no estén documentadas en el CV.
+          Los proyectos se describen por área de experiencia y no incluyen
+          métricas de impacto que no estén documentadas en el currículum.
         </p>
       </div>
     </section>
@@ -1320,7 +1330,9 @@
     <section class="section skills-section" id="competencias">
       <div class="container">
         <p class="section-label">04 / Competencias</p>
-        <h2 class="section-title">Cómo aporto <span class="gradient-text">valor.</span></h2>
+        <h2 class="section-title">
+          Cómo aporto <span class="gradient-text">valor.</span>
+        </h2>
         <p class="section-description">
           Gestión, coordinación y seguimiento para mantener los proyectos
           alineados con las prioridades del negocio.
@@ -1354,7 +1366,7 @@
           <article class="skill-card">
             <div class="skill-symbol">05</div>
             <h3>Análisis funcional</h3>
-            <p>Levantamiento, análisis y documentación de requerimientos, así como seguimiento de iniciativas tecnológicas.</p>
+            <p>Levantamiento, análisis y documentación de requerimientos y seguimiento de iniciativas tecnológicas.</p>
           </article>
 
           <article class="skill-card">
@@ -1371,12 +1383,14 @@
             <div class="cert-item"><span class="cert-check">✓</span> AWS Certified Cloud Practitioner</div>
             <div class="cert-item"><span class="cert-check">✓</span> Scrum Master Certified</div>
           </div>
-          <p style="color:var(--text);margin-top:20px;font-size:.92rem">
-            <strong>Educación:</strong> Ingeniería en Tecnologías de la Información
-            · Universidad Tecnológica Tula–Tepeji · 2009–2013.
+
+          <p class="education-text">
+            <strong>Educación:</strong> Ingeniería en Tecnologías de la
+            Información · Universidad Tecnológica Tula–Tepeji · 2009–2013.
           </p>
-          <p style="color:var(--text);margin-top:8px;font-size:.92rem">
-            <strong>Herramientas:</strong> Jira, Confluence, Microsoft Project y Microsoft 365.
+          <p class="education-text">
+            <strong>Herramientas:</strong> Jira, Confluence, Microsoft Project
+            y Microsoft 365.
           </p>
         </div>
       </div>
@@ -1387,7 +1401,11 @@
       <div class="container">
         <div class="contact-panel">
           <p class="section-label">05 / Contacto</p>
-          <h2>¿Conectamos para tu <span class="gradient-text">próximo proyecto?</span></h2>
+          <h2>
+            ¿Conectamos para tu
+            <span class="gradient-text">próximo proyecto?</span>
+          </h2>
+
           <p>
             ¿Buscas una Project Manager para tu equipo o quieres conversar
             sobre una oportunidad profesional? Me encantará conectar contigo.
@@ -1426,6 +1444,7 @@
               target="_blank" rel="noopener noreferrer">
               Conectar en LinkedIn ↗
             </a>
+
             <a class="button button-secondary"
               href="mailto:hernandez.castillo.erika@gmail.com?subject=Oportunidad%20profesional">
               Enviarme un correo ✉
@@ -1455,16 +1474,16 @@
   </footer>
 
   <script>
-    // Año automático en el pie de página
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
 
-    // Menú adaptable para celulares
     const menuToggle = document.getElementById("menuToggle");
     const navLinks = document.getElementById("navLinks");
     const navigationItems = document.querySelectorAll(".nav-links a");
 
     menuToggle.addEventListener("click", () => {
       const isOpen = navLinks.classList.toggle("open");
+
       menuToggle.setAttribute("aria-expanded", String(isOpen));
       menuToggle.setAttribute(
         "aria-label",
@@ -1482,7 +1501,6 @@
       });
     });
 
-    // Resaltar en el menú la sección visible
     const sections = document.querySelectorAll("main section[id]");
 
     if ("IntersectionObserver" in window) {
@@ -1490,8 +1508,10 @@
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             navigationItems.forEach((link) => {
-              const isCurrent = link.getAttribute("href") === "#" + entry.target.id;
-              link.classList.toggle("active", isCurrent);
+              link.classList.toggle(
+                "active",
+                link.getAttribute("href") === "#" + entry.target.id
+              );
             });
           }
         });
